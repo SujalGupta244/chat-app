@@ -5,8 +5,8 @@ import protectRoute from "../middleware/protectRoute.js";
 const router = express.Router();
 
 router.get("/me",protectRoute, getMe)
-router.post("/login", logout)
-router.post("/logout",login)
+router.post("/login", login)
+router.post("/logout",logout)
 router.post("/signup",signup)
 
 export default router;
