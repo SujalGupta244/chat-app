@@ -75,7 +75,7 @@ export const login = async(req: Request, res: Response ) =>{
 
 		res.status(200).json({
 			id: user.id,
-			fullname: user.fullName,
+			fullName: user.fullName,
 			username: user.username,
 			profilePic: user.profilePic
 		})
